@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "style-wide.css",
+	"sources": [
+		"../sass/style-wide.scss",
+		"../sass/_vars.scss",
+		"../sass/_mixins.scss"
+	],
+	"mappings": "AAGA;;;;EAIE;AAEF,WAAW;AAEV,IAAI,EAAE,KAAK,EAAE,MAAM,EAAE,QAAQ,CAAC;EAC7B,SAAS,EAAE,IAAK,GAChB;;AAEF,YAAY;AAEX,OAAO,CAAC;EACP,OAAO,EAAE,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,GAMrB;EAPD,OAAO,CAGN,GAAG,CAAC;IACH,aAAa,EAAC,EAAG;IACjB,KAAK,EAAC,GAAI,GACV",
+	"names": []
+}

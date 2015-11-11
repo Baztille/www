@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "style-narrow.css",
+	"sources": [
+		"../sass/style-narrow.scss",
+		"../sass/_vars.scss",
+		"../sass/_mixins.scss"
+	],
+	"mappings": "AAGA;;;;EAIE;AAEF,WAAW;AAEV,IAAI,EAAE,KAAK,EAAE,MAAM,EAAE,QAAQ,CAAC;EAC7B,SAAS,EAAE,IAAK,GAChB;;AACD,QAAQ,CAEN,MAAM,CAAC;EACN,GAAG,EAAE,CAAE;EACP,IAAI,EAAE,CAAE;EACR,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM,GACd",
+	"names": []
+}

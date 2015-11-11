@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "style-normal.css",
+	"sources": [
+		"../sass/style-normal.scss",
+		"../sass/_vars.scss",
+		"../sass/_mixins.scss"
+	],
+	"mappings": "AAGA;;;;EAIE;AAEF,WAAW;AAEV,IAAI,EAAE,KAAK,EAAE,MAAM,EAAE,QAAQ,CAAC;EAC7B,SAAS,EAAE,IAAK,GAChB;;AAEF,YAAY;AAEX,UAAU,AACR,QAAQ,CAAC;EACT,SAAS,EAAE,GAAI,GACf;;AAGH,YAAY;AAEX,OAAO,CAAC;EACP,qBAAqB,EAAE,MAAO,GAS9B;EAVD,OAAO,CAGN,EAAE,CAAC;IACF,SAAS,EAAE,KAAM,GACjB;EALF,OAAO,CAON,GAAG,CAAC;IACH,KAAK,EAAC,GAAI,GACV",
+	"names": []
+}
