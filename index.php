@@ -42,8 +42,7 @@ $app->get('/template', function( ) use ($app) {
     return file_get_contents( 'landing/elements.html' );
 } );
 
-
 $app->register(new Silex\Provider\SessionServiceProvider(), array(
-'session.storage.options' => array('cookie_domain' => 'far.baztille.org'),
+'session.storage.options' => array('cookie_domain' => $g_config['app_domain'] ),
 ));
 $app->run();

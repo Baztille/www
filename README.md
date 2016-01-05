@@ -19,6 +19,7 @@ Baztille est un mouvement de citoyens pour réinventer la démocratie.
 ```bash
 # Cloner le repo
 $ git clone git://github.com/Baztille/www.git
+$ cd www
 $ composer install --prefer-source
 
 # Installer le preprocessing des assets via Grunt
