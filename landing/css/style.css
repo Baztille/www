@@ -24,7 +24,7 @@ a {
   -ms-transition: color 0.15s ease-in-out, border-bottom-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, border-bottom-color 0.15s ease-in-out;
   border-bottom: dotted 1px;
-  color: #000000;
+  color: #00A8D0;
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent; }
@@ -215,8 +215,8 @@ textarea {
   input[type="email"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #000000;
-    box-shadow: 0 0 0 1px #000000; }
+    border-color: #00A8D0;
+    box-shadow: 0 0 0 1px #00A8D0; }
 
 .select-wrapper {
   text-decoration: none;
@@ -307,8 +307,8 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #000000;
-    box-shadow: 0 0 0 1px #000000; }
+    border-color: #00A8D0;
+    box-shadow: 0 0 0 1px #00A8D0; }
 
 input[type="checkbox"] + label:before {
   border-radius: 6px; }
@@ -431,7 +431,7 @@ input[type="radio"] + label:before {
       background: #F9DA00;
       color: #ffffff; }
     .icon.major.accent2 {
-      background: #000000;
+      background: #00A8D0;
       color: #ffffff; }
     .icon.major.accent3 {
       background: #7fcdb8;
@@ -604,7 +604,7 @@ input[type="button"],
   -ms-transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
   background-color: #F9DA00;
-  border-radius: 6px;
+  border-radius: 3px;
   border: 0;
   color: #ffffff;
   cursor: pointer;
@@ -682,19 +682,20 @@ input[type="button"],
   input[type="reset"].special,
   input[type="button"].special,
   .button.special {
-    background-color: #000000;
-    color: #ffffff !important; }
+    background-color: #00A8D0; }
     input[type="submit"].special:hover,
     input[type="reset"].special:hover,
     input[type="button"].special:hover,
     .button.special:hover {
-      background-color: #0d0d0d; }
+      background-color: #F9DA00;
+      color: black !important; }
     input[type="submit"].special:active,
     input[type="reset"].special:active,
     input[type="button"].special:active,
     .button.special:active {
-      background-color: black; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
+      background-color: #0093b6; }
+  input[type="submit"].disabled,
+  input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
   input[type="button"].disabled,
@@ -747,6 +748,7 @@ body.landing #skel-layers-wrapper {
 #header {
   background: #000000;
   color: #bbb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: default;
   height: 3.25em;
   left: 0;
@@ -789,11 +791,12 @@ body.landing #skel-layers-wrapper {
           display: none; }
         #header nav > ul > li a {
           display: inline-block;
-          height: 2em;
-          line-height: 1.95em;
+          height: 2.7em;
+          line-height: 2.7em;
           padding: 0 1em;
-          font-size: 12px;
-          border-radius: 6px; }
+          font-size: 13px;
+          border-radius: 3px;
+          display: inline-block; }
         #header nav > ul > li a:not(.button) {
           color: #fff;
           display: inline-block;
@@ -892,8 +895,10 @@ body.landing #skel-layers-wrapper {
       padding: 0.15em 1em; }
     .dropotron li:first-child > a, .dropotron li:first-child > span {
       border-top: 0; }
-    .dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
-      background: #000000;
+    .dropotron li.active > a,
+    .dropotron li.active > span,
+    .dropotron li:hover > a, .dropotron li:hover > span {
+      background: #00A8D0;
       color: #ffffff; }
   .dropotron.level-0 {
     font-size: 0.9em;
@@ -925,6 +930,7 @@ body.landing #skel-layers-wrapper {
   background-position: bottom left,						center center;
   background-repeat: repeat,							no-repeat;
   background-size: cover;
+  background-color: black;
   color: #fff;
   padding: 12em 0 20em 0;
   text-align: center; }
@@ -936,7 +942,7 @@ body.landing #skel-layers-wrapper {
   #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
     color: #fff; }
   #banner h2 {
-    font-size: 3.5em;
+    font-size: 3.0em;
     line-height: 1em;
     margin: 0 0 0.5em 0;
     padding: 0; }
@@ -966,7 +972,12 @@ body.landing #skel-layers-wrapper {
     #banner input[type="button"].special,
     #banner .button.special {
       background: #fff;
-      color: #666 !important; }
+      color: black !important; }
+      #banner input[type="submit"].special:hover,
+      #banner input[type="reset"].special:hover,
+      #banner input[type="button"].special:hover,
+      #banner .button.special:hover {
+        background-color: #F9DA00; }
 
 /* Main */
 #main {
@@ -1040,7 +1051,21 @@ body.landing #main {
   #cta .button {
     box-shadow: none;
     background: #000000;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    min-width: 12em; }
+    #cta input[type="submit"].special,
+    #cta input[type="reset"].special,
+    #cta input[type="button"].special,
+    #cta .button.special {
+      background: #FFFFFF;
+      color: #000000; }
+      #cta input[type="submit"].special:hover,
+      #cta input[type="reset"].special:hover,
+      #cta input[type="button"].special:hover,
+      #cta .button.special:hover {
+        background: #000000;
+        color: #FFFFFF !important; }
   #cta input[type="text"],
   #cta input[type="password"],
   #cta input[type="email"],
@@ -1064,5 +1089,26 @@ body.landing #main {
     color: rgba(0, 0, 0, 0.75) !important; }
   #cta .formerize-placeholder {
     color: rgba(255, 255, 255, 0.75) !important; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 99999; }
+  .overlay .inner-overlay {
+    z-index: 999999;
+    width: 50%;
+    max-width: 450px;
+    margin: 10% auto;
+    padding: 5%;
+    background: white;
+    pointer-events: none; }
+    .overlay .inner-overlay ul.actions li {
+      width: 100%; }
+      .overlay .inner-overlay ul.actions li a {
+        pointer-events: all; }
 
 /*# sourceMappingURL=style.css.map */

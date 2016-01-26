@@ -104,6 +104,22 @@
 
 			}
 
+	$('.open-overlay').on('click',function( event){
+		event.preventDefault();
+		$('.overlay').toggle();
+	  	ga('send', 'event', 'Suscribe', 'Overlay Open', this.href);
+	  	
+	});
+	
+	$('.overlay').on('click',function( event){
+		$('.overlay').toggle();
+	});
+
+	$('.inner-overlay a').on('click',function( event){
+	  ga('send', 'event', 'Suscribe', 'Click', this.text());
+	});
+
+
 	});
 
 })(jQuery);
