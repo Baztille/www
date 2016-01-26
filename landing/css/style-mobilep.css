@@ -68,4 +68,9 @@ ul.actions {
 #cta {
   padding: 2.5em 1em 3em 1em; }
 
+.overlay .inner-overlay {
+  z-index: 999999;
+  width: 80%;
+  margin: 20% auto; }
+
 /*# sourceMappingURL=style-mobilep.css.map */

@@ -162,3 +162,11 @@
 			}
 		}
 	}
+
+	.overlay {
+		.inner-overlay {
+		z-index: 999999;
+		width:80%;
+		margin:20% auto;
+	}
+}
