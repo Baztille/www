@@ -670,9 +670,10 @@
 				padding: 0 ($size-element-margin * 0.5) 0 0;
 				vertical-align: middle;
 			
-				&:last-child {
+				/*
+				    &:last-child {
 					padding-right: 0;
-				}
+				}*/
 			}
 			
 			&.small {

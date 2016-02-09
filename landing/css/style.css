@@ -511,9 +511,11 @@ ul {
     ul.actions li {
       display: inline-block;
       padding: 0 1em 0 0;
-      vertical-align: middle; }
-      ul.actions li:last-child {
-        padding-right: 0; }
+      vertical-align: middle;
+      /*
+				    &:last-child {
+					padding-right: 0;
+				}*/ }
     ul.actions.small li {
       padding: 0 0.5em 0 0; }
     ul.actions.vertical li {
@@ -693,9 +695,8 @@ input[type="button"],
     input[type="reset"].special:active,
     input[type="button"].special:active,
     .button.special:active {
-      background-color: #0093b6; }
-  input[type="submit"].disabled,
-  input[type="submit"]:disabled,
+      background-color: #0093b7; }
+  input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
   input[type="button"].disabled,
@@ -895,9 +896,7 @@ body.landing #skel-layers-wrapper {
       padding: 0.15em 1em; }
     .dropotron li:first-child > a, .dropotron li:first-child > span {
       border-top: 0; }
-    .dropotron li.active > a,
-    .dropotron li.active > span,
-    .dropotron li:hover > a, .dropotron li:hover > span {
+    .dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
       background: #00A8D0;
       color: #ffffff; }
   .dropotron.level-0 {
