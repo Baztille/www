@@ -116,7 +116,7 @@
 	});
 
 	$('.inner-overlay a').on('click',function( event){
-	  ga('send', 'event', 'Suscribe', 'Click', this.text());
+	  ga('send', 'event', 'Suscribe', 'Click', this.text);
 	});
 
 
