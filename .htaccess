@@ -2,7 +2,12 @@
     Options -MultiViews
 
     RewriteEngine On
+
+    RewriteCond %{HTTP_HOST} ^www\.baztille\.org [NC]
+	RewriteRule ^(.*)$ http://baztille.org/$1 [L,R=301]
+
     #RewriteBase /path/to/app
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [QSA,L]
+
 </IfModule>
